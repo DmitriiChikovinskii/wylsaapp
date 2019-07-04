@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032766BAEAD8C3752D7DEF /* UIColor.swift */; };
+		180321731992FDC511CC6031 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B60079C49236767C706 /* FeedPresenter.swift */; };
+		180321AC80723F4B53120C92 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCED445B44EEA9EE6B /* FeedViewCell.swift */; };
+		1803224055EAAF6CB240024F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180322C664BAB5E87BC6042E /* Assets.xcassets */; };
+		1803235D42F63CEA7F9E3B9B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180325F266C2F0B0E0EBB734 /* FeedViewController.swift */; };
+		1803239745A0C42B39347432 /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032833F17FCD3A1E134432 /* FeedContainer.swift */; };
+		180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */; };
+		1803251A9E38E39EDCBEF75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803235725436DDDC951B326 /* LaunchScreen.storyboard */; };
+		180325946A95C10091A5DD18 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032F2714F04D9EF608500D /* FeedCardView.swift */; };
+		180327FAA989AD599855D55F /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */; };
+		1803284D50C0937C50C81A5E /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032410572685EB6BBBA115 /* FeedInteractor.swift */; };
+		180329095E7D1CD1AD3F9212 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180322CA700879A56AE8CB06 /* Font.swift */; };
+		18032AA76C9A6D0044D6C040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803274A210E5A4670FEAA4F /* AppDelegate.swift */; };
+		18032CFD13F704F40DB26974 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032FFDB394D83F016B0CEF /* FeedRouter.swift */; };
+		18032DC1596826ECB9641052 /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032624517CAA9534CF4A14 /* FeedProtocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180320584D339D17B3B32C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		180322C664BAB5E87BC6042E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180322CA700879A56AE8CB06 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		18032410572685EB6BBBA115 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		180325F266C2F0B0E0EBB734 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		18032624517CAA9534CF4A14 /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
+		1803274A210E5A4670FEAA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18032766BAEAD8C3752D7DEF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		180327FCED445B44EEA9EE6B /* FeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		18032805141893949F92DFDA /* WylsaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18032833F17FCD3A1E134432 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
+		180328891CF13E4FAFBB2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18032B60079C49236767C706 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		18032F2714F04D9EF608500D /* FeedCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
+		18032FFDB394D83F016B0CEF /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180322F2F888D4B2CCBA973D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1803201BD3E5393B64A87F19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		180322D2D8EE73D3A626B961 = {
+			isa = PBXGroup;
+			children = (
+				180326215719203F7E9E695A /* Products */,
+				1803253E9E1AACD1B0AFCFA0 /* WylsaApp */,
+			);
+			sourceTree = "<group>";
+		};
+		1803253E9E1AACD1B0AFCFA0 /* WylsaApp */ = {
+			isa = PBXGroup;
+			children = (
+				180320584D339D17B3B32C83 /* Info.plist */,
+				180322C664BAB5E87BC6042E /* Assets.xcassets */,
+				1803235725436DDDC951B326 /* LaunchScreen.storyboard */,
+				1803274A210E5A4670FEAA4F /* AppDelegate.swift */,
+				18032A692AB8ED6F1CB8C1C4 /* Modules */,
+				18032AC64EEFE043A0901533 /* Helpers */,
+				18032FB2AC83D8E11B0E9C6B /* Extensions */,
+			);
+			path = WylsaApp;
+			sourceTree = "<group>";
+		};
+		180326215719203F7E9E695A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18032805141893949F92DFDA /* WylsaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18032A692AB8ED6F1CB8C1C4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18032C53333A50526F2D7192 /* Feed */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18032AC64EEFE043A0901533 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */,
+				180322CA700879A56AE8CB06 /* Font.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		18032C53333A50526F2D7192 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				18032B60079C49236767C706 /* FeedPresenter.swift */,
+				18032FFDB394D83F016B0CEF /* FeedRouter.swift */,
+				180325F266C2F0B0E0EBB734 /* FeedViewController.swift */,
+				18032624517CAA9534CF4A14 /* FeedProtocols.swift */,
+				18032410572685EB6BBBA115 /* FeedInteractor.swift */,
+				18032833F17FCD3A1E134432 /* FeedContainer.swift */,
+				18032DFFDE9C8A27814724A6 /* Views */,
+				1803201BD3E5393B64A87F19 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		18032DFFDE9C8A27814724A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				180327FCED445B44EEA9EE6B /* FeedViewCell.swift */,
+				18032F2714F04D9EF608500D /* FeedCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18032FB2AC83D8E11B0E9C6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18032766BAEAD8C3752D7DEF /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18032F34639B4B6079C376F2 /* WylsaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18032B4FC0F7837C41B15194 /* Build configuration list for PBXNativeTarget "WylsaApp" */;
+			buildPhases = (
+				18032486DE5131D48F5F4D3E /* Sources */,
+				180322F2F888D4B2CCBA973D /* Frameworks */,
+				180327A10CE2BA2BC1A0B19F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WylsaApp;
+			productName = WylsaApp;
+			productReference = 18032805141893949F92DFDA /* WylsaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180320D372434AC3B81B228D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dmitrii Space";
+				TargetAttributes = {
+					18032F34639B4B6079C376F2 = {
+						DevelopmentTeam = 6K27QW9MU8;
+					};
+				};
+			};
+			buildConfigurationList = 1803266019E87EAEB21ABDC8 /* Build configuration list for PBXProject "WylsaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 180322D2D8EE73D3A626B961;
+			productRefGroup = 180326215719203F7E9E695A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18032F34639B4B6079C376F2 /* WylsaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180327A10CE2BA2BC1A0B19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803224055EAAF6CB240024F /* Assets.xcassets in Resources */,
+				1803251A9E38E39EDCBEF75E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18032486DE5131D48F5F4D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18032AA76C9A6D0044D6C040 /* AppDelegate.swift in Sources */,
+				180321731992FDC511CC6031 /* FeedPresenter.swift in Sources */,
+				18032CFD13F704F40DB26974 /* FeedRouter.swift in Sources */,
+				1803235D42F63CEA7F9E3B9B /* FeedViewController.swift in Sources */,
+				18032DC1596826ECB9641052 /* FeedProtocols.swift in Sources */,
+				1803284D50C0937C50C81A5E /* FeedInteractor.swift in Sources */,
+				1803239745A0C42B39347432 /* FeedContainer.swift in Sources */,
+				180327FAA989AD599855D55F /* ReuseIdentifier.swift in Sources */,
+				180321AC80723F4B53120C92 /* FeedViewCell.swift in Sources */,
+				180325946A95C10091A5DD18 /* FeedCardView.swift in Sources */,
+				180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */,
+				180329095E7D1CD1AD3F9212 /* Font.swift in Sources */,
+				1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1803235725436DDDC951B326 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180328891CF13E4FAFBB2173 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180321D4B27262F149911CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		180322FAE4F8B2BF3576C41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6K27QW9MU8;
+				INFOPLIST_FILE = WylsaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.dmitrii.WylsaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18032832C7E2357DD72141A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6K27QW9MU8;
+				INFOPLIST_FILE = WylsaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.dmitrii.WylsaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18032C7173B7B1A4C8306F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1803266019E87EAEB21ABDC8 /* Build configuration list for PBXProject "WylsaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180321D4B27262F149911CA5 /* Debug */,
+				18032C7173B7B1A4C8306F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18032B4FC0F7837C41B15194 /* Build configuration list for PBXNativeTarget "WylsaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180322FAE4F8B2BF3576C41F /* Debug */,
+				18032832C7E2357DD72141A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180320D372434AC3B81B228D /* Project object */;
+}
