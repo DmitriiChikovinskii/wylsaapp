@@ -10,6 +10,7 @@
 		1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032766BAEAD8C3752D7DEF /* UIColor.swift */; };
 		180321731992FDC511CC6031 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B60079C49236767C706 /* FeedPresenter.swift */; };
 		180321AC80723F4B53120C92 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCED445B44EEA9EE6B /* FeedViewCell.swift */; };
+		1803223A31101A4D98BFE897 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCB1074A898BCB156B /* Styles.swift */; };
 		1803224055EAAF6CB240024F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180322C664BAB5E87BC6042E /* Assets.xcassets */; };
 		1803235D42F63CEA7F9E3B9B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180325F266C2F0B0E0EBB734 /* FeedViewController.swift */; };
 		1803239745A0C42B39347432 /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032833F17FCD3A1E134432 /* FeedContainer.swift */; };
@@ -34,6 +35,7 @@
 		18032624517CAA9534CF4A14 /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
 		1803274A210E5A4670FEAA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18032766BAEAD8C3752D7DEF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		180327FCB1074A898BCB156B /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		180327FCED445B44EEA9EE6B /* FeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		18032805141893949F92DFDA /* WylsaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18032833F17FCD3A1E134432 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */,
 				180322CA700879A56AE8CB06 /* Font.swift */,
+				180327FCB1074A898BCB156B /* Styles.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */,
 				180329095E7D1CD1AD3F9212 /* Font.swift in Sources */,
 				1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */,
+				1803223A31101A4D98BFE897 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

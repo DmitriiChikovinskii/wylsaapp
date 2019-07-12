@@ -36,7 +36,7 @@ class FeedCardView: UIView {
         self.imageView.contentMode = .scaleAspectFill
     }
 
-    required override init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("unsupported")
     }
 
