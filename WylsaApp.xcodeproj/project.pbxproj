@@ -13,6 +13,7 @@
 		1803223A31101A4D98BFE897 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCB1074A898BCB156B /* Styles.swift */; };
 		1803224055EAAF6CB240024F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180322C664BAB5E87BC6042E /* Assets.xcassets */; };
 		1803235D42F63CEA7F9E3B9B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180325F266C2F0B0E0EBB734 /* FeedViewController.swift */; };
+		18032383956EC8164137EC93 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032C63D69D3F3715B02901 /* AppCoordinator.swift */; };
 		1803239745A0C42B39347432 /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032833F17FCD3A1E134432 /* FeedContainer.swift */; };
 		180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */; };
 		1803251A9E38E39EDCBEF75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803235725436DDDC951B326 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 		18032AA76C9A6D0044D6C040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803274A210E5A4670FEAA4F /* AppDelegate.swift */; };
 		18032CFD13F704F40DB26974 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032FFDB394D83F016B0CEF /* FeedRouter.swift */; };
 		18032DC1596826ECB9641052 /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032624517CAA9534CF4A14 /* FeedProtocols.swift */; };
+		18032FF140BEE3F95D0A9074 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032597246FD88920AE1826 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		180322CA700879A56AE8CB06 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		18032410572685EB6BBBA115 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		18032597246FD88920AE1826 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		180325F266C2F0B0E0EBB734 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		18032624517CAA9534CF4A14 /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
 		1803274A210E5A4670FEAA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		18032833F17FCD3A1E134432 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
 		180328891CF13E4FAFBB2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18032B60079C49236767C706 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		18032C63D69D3F3715B02901 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 		18032F2714F04D9EF608500D /* FeedCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		18032FFDB394D83F016B0CEF /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				18032C53333A50526F2D7192 /* Feed */,
+				18032C63D69D3F3715B02901 /* AppCoordinator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */,
 				180322CA700879A56AE8CB06 /* Font.swift */,
 				180327FCB1074A898BCB156B /* Styles.swift */,
+				18032597246FD88920AE1826 /* Localization.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				180329095E7D1CD1AD3F9212 /* Font.swift in Sources */,
 				1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */,
 				1803223A31101A4D98BFE897 /* Styles.swift in Sources */,
+				18032383956EC8164137EC93 /* AppCoordinator.swift in Sources */,
+				18032FF140BEE3F95D0A9074 /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
