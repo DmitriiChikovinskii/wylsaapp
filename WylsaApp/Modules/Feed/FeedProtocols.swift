@@ -24,9 +24,12 @@ protocol FeedViewOutput: class {
 }
 
 protocol FeedInteractorInput: class {
+    func loadArticles()
 }
 
 protocol FeedInteractorOutput: class {
+    func didEncounterError(_ error: Error)
+    func didLoad(_ articles: [Article])
 }
 
 protocol FeedRouterInput: class {

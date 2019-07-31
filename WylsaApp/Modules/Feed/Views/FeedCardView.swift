@@ -68,7 +68,7 @@ class FeedCardView: UIView {
         self.infoLabel.text = viewModel.info
         self.titleLabel.text = viewModel.title
         self.shortDescriptionLabel.text = viewModel.shortDescription
-        self.imageView.image = UIImage(named: viewModel.imageName)
+        self.imageView.setImage(with: URL(string: viewModel.imageName))
         self.setNeedsLayout()
     }
 }

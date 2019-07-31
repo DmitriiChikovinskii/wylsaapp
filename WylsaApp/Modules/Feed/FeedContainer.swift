@@ -15,7 +15,7 @@ final class FeedContainer {
 
 	class func assemble(with context: FeedContext) -> FeedContainer {
         let router = FeedRouter()
-        let interactor = FeedInteractor()
+        let interactor = FeedInteractor(articlesNetworkService: context.moduleDependencies.articlesNetworkService)
         let presenter = FeedPresenter(router: router, interactor: interactor)
 		let viewController = FeedViewController(output: presenter)
 
@@ -35,5 +35,8 @@ final class FeedContainer {
 }
 
 struct FeedContext {
+	typealias ModuleDependencies = HasArticlesNetworkService
+
+	let moduleDependencies: ModuleDependencies
 	weak var moduleOutput: FeedModuleOutput?
 }

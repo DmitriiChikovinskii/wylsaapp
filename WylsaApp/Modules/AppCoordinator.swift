@@ -7,12 +7,14 @@ import UIKit
 
 class AppCoordinator {
 
+    private let appDependency: AppDependency
     private let window: UIWindow
     private lazy var tabBarController = UITabBarController()
     private lazy var navigationControllers = AppCoordinator.makeNavigationControllers()
 
-    init(window: UIWindow) {
+    init(window: UIWindow, appDependency: AppDependency) {
         self.window = window
+        self.appDependency = appDependency
         self.setupAppearance()
     }
 
@@ -33,7 +35,8 @@ private extension AppCoordinator {
         guard let navController = self.navigationControllers[.feed] else {
             fatalError("can't find navController")
         }
-        let context = FeedContext(moduleOutput: nil)
+        let context = FeedContext(moduleDependencies: self.appDependency,
+                                  moduleOutput: nil)
         let container = FeedContainer.assemble(with: context)
         navController.setViewControllers([container.viewController], animated: false)
         container.viewController.navigationItem.title = NavControllerType.feed.title

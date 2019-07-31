@@ -18,24 +18,35 @@
 		180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */; };
 		1803251A9E38E39EDCBEF75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803235725436DDDC951B326 /* LaunchScreen.storyboard */; };
 		180325946A95C10091A5DD18 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032F2714F04D9EF608500D /* FeedCardView.swift */; };
+		1803274B7B46ECD73F30331F /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E9846D605AA5FFB366D /* URLFactory.swift */; };
 		180327FAA989AD599855D55F /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */; };
 		1803284D50C0937C50C81A5E /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032410572685EB6BBBA115 /* FeedInteractor.swift */; };
 		180329095E7D1CD1AD3F9212 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180322CA700879A56AE8CB06 /* Font.swift */; };
+		1803296BA00155CFEF20E931 /* NetworkService+Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180328976FAD44CC2DBE2CF8 /* NetworkService+Articles.swift */; };
 		18032AA76C9A6D0044D6C040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803274A210E5A4670FEAA4F /* AppDelegate.swift */; };
+		18032B99B32D99B29B65CE87 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803273D525E2DBCF711C54C /* AppDependency.swift */; };
+		18032BE14AE07914F3088E97 /* NetworkServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032347BCAAFF2C70D61784 /* NetworkServiceProtocols.swift */; };
+		18032CD6883CC24435A221EA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B6B724A0D2D8DD84BE4 /* NetworkService.swift */; };
 		18032CFD13F704F40DB26974 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032FFDB394D83F016B0CEF /* FeedRouter.swift */; };
 		18032DC1596826ECB9641052 /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032624517CAA9534CF4A14 /* FeedProtocols.swift */; };
+		18032F07272F17CDFA80CC59 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032C845DC1FC47A5B03BC0 /* UIImageView+URL.swift */; };
 		18032FF140BEE3F95D0A9074 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032597246FD88920AE1826 /* Localization.swift */; };
+		1BAEF68FD33604C84D16416C /* Pods_WylsaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E1625FB5099D96B3DC485 /* Pods_WylsaApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WylsaApp.debug.xcconfig"; path = "Target Support Files/Pods-WylsaApp/Pods-WylsaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0A9E1625FB5099D96B3DC485 /* Pods_WylsaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WylsaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180320584D339D17B3B32C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		180322C664BAB5E87BC6042E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180322CA700879A56AE8CB06 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		18032347BCAAFF2C70D61784 /* NetworkServiceProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocols.swift; sourceTree = "<group>"; };
 		18032410572685EB6BBBA115 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
 		18032597246FD88920AE1826 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		180325F266C2F0B0E0EBB734 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		18032624517CAA9534CF4A14 /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
+		1803273D525E2DBCF711C54C /* AppDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		1803274A210E5A4670FEAA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18032766BAEAD8C3752D7DEF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		180327FCB1074A898BCB156B /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -43,11 +54,16 @@
 		18032805141893949F92DFDA /* WylsaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18032833F17FCD3A1E134432 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
 		180328891CF13E4FAFBB2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180328976FAD44CC2DBE2CF8 /* NetworkService+Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkService+Articles.swift"; sourceTree = "<group>"; };
 		18032B60079C49236767C706 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		18032B6B724A0D2D8DD84BE4 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		18032C63D69D3F3715B02901 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		18032C845DC1FC47A5B03BC0 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		18032E9846D605AA5FFB366D /* URLFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		18032F2714F04D9EF608500D /* FeedCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		18032FFDB394D83F016B0CEF /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WylsaApp.release.xcconfig"; path = "Target Support Files/Pods-WylsaApp/Pods-WylsaApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAEF68FD33604C84D16416C /* Pods_WylsaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,8 @@
 			children = (
 				180326215719203F7E9E695A /* Products */,
 				1803253E9E1AACD1B0AFCFA0 /* WylsaApp */,
+				3CD4DEB685CC25EE8EB2476E /* Pods */,
+				A6AA6B749D7015F5089AE37D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +106,7 @@
 				18032A692AB8ED6F1CB8C1C4 /* Modules */,
 				18032AC64EEFE043A0901533 /* Helpers */,
 				18032FB2AC83D8E11B0E9C6B /* Extensions */,
+				180327B9EBC666654A542298 /* Network */,
 			);
 			path = WylsaApp;
 			sourceTree = "<group>";
@@ -99,11 +119,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		180327B9EBC666654A542298 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18032B6B724A0D2D8DD84BE4 /* NetworkService.swift */,
+				18032347BCAAFF2C70D61784 /* NetworkServiceProtocols.swift */,
+				180328976FAD44CC2DBE2CF8 /* NetworkService+Articles.swift */,
+				18032E9846D605AA5FFB366D /* URLFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		18032A692AB8ED6F1CB8C1C4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				18032C53333A50526F2D7192 /* Feed */,
 				18032C63D69D3F3715B02901 /* AppCoordinator.swift */,
+				1803273D525E2DBCF711C54C /* AppDependency.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -147,8 +179,27 @@
 			isa = PBXGroup;
 			children = (
 				18032766BAEAD8C3752D7DEF /* UIColor.swift */,
+				18032C845DC1FC47A5B03BC0 /* UIImageView+URL.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CD4DEB685CC25EE8EB2476E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */,
+				ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6AA6B749D7015F5089AE37D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E1625FB5099D96B3DC485 /* Pods_WylsaApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18032B4FC0F7837C41B15194 /* Build configuration list for PBXNativeTarget "WylsaApp" */;
 			buildPhases = (
+				B29184A46C6E78A334860F9B /* [CP] Check Pods Manifest.lock */,
 				18032486DE5131D48F5F4D3E /* Sources */,
 				180322F2F888D4B2CCBA973D /* Frameworks */,
 				180327A10CE2BA2BC1A0B19F /* Resources */,
+				15EBF9578DC0BEB1358E623E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +269,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15EBF9578DC0BEB1358E623E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WylsaApp/Pods-WylsaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WylsaApp/Pods-WylsaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29184A46C6E78A334860F9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WylsaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18032486DE5131D48F5F4D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -237,6 +333,12 @@
 				1803223A31101A4D98BFE897 /* Styles.swift in Sources */,
 				18032383956EC8164137EC93 /* AppCoordinator.swift in Sources */,
 				18032FF140BEE3F95D0A9074 /* Localization.swift in Sources */,
+				18032CD6883CC24435A221EA /* NetworkService.swift in Sources */,
+				18032BE14AE07914F3088E97 /* NetworkServiceProtocols.swift in Sources */,
+				1803296BA00155CFEF20E931 /* NetworkService+Articles.swift in Sources */,
+				1803274B7B46ECD73F30331F /* URLFactory.swift in Sources */,
+				18032B99B32D99B29B65CE87 /* AppDependency.swift in Sources */,
+				18032F07272F17CDFA80CC59 /* UIImageView+URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +420,7 @@
 		};
 		180322FAE4F8B2BF3576C41F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K27QW9MU8;
@@ -332,6 +435,7 @@
 		};
 		18032832C7E2357DD72141A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K27QW9MU8;

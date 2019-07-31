@@ -15,6 +15,8 @@ final class FeedPresenter {
     private let router: FeedRouterInput
     private let interactor: FeedInteractorInput
 
+    private var articles: [Article] = []
+
     init(router: FeedRouterInput, interactor: FeedInteractorInput) {
         self.router = router
         self.interactor = interactor
@@ -26,51 +28,29 @@ extension FeedPresenter: FeedModuleInput {
 
 extension FeedPresenter: FeedViewOutput {
     func viewDidLoad() {
-        self.view?.set(viewModels: self.makeViewModels())
+        self.interactor.loadArticles()
     }
 }
 
 extension FeedPresenter: FeedInteractorOutput {
+    func didEncounterError(_ error: Error) {
+        // TODO: implement error handling
+    }
+
+    func didLoad(_ articles: [Article]) {
+        self.articles = articles
+        let viewModels: [FeedCardViewModel] = self.makeViewModels(self.articles)
+        self.view?.set(viewModels: viewModels)
+    }
 }
 
 private extension FeedPresenter {
-    func makeViewModels() -> [FeedCardViewModel] {
-        return [
-            FeedCardViewModel(info: "Новости",
-                              title: "Google запустит аналог AirDrop",
-                              shortDescription: "Функция Fast Share должна стать аналогом AirDrop, но для устройств Google. Для передачи данных используется Wi-Fi и Bluetooth. Можно будет ",
-                              imageName: "feed1"),
-            FeedCardViewModel(info: "Прикольная новость",
-                              title: "Кликбейт заголовок про то какой же крутой это смартфон от китайцев",
-                              shortDescription: "Каждый раз одно и то же, так что читайте!!!",
-                              imageName: "feed2"),
-            FeedCardViewModel(info: "Статья",
-                              title: "Лучшее за неделю: будущие Apple Watch и iPhone 11",
-                              shortDescription: "Short text",
-                              imageName: "feed3"),
-            FeedCardViewModel(info: "Новости",
-                              title: "Google запустит аналог AirDrop",
-                              shortDescription: "Функция Fast Share должна стать аналогом AirDrop, но для устройств Google. Для передачи данных используется Wi-Fi и Bluetooth. Можно будет ",
-                              imageName: "feed1"),
-            FeedCardViewModel(info: "Прикольная новость",
-                              title: "Кликбейт заголовок про то какой же крутой это смартфон от китайцев",
-                              shortDescription: "Каждый раз одно и то же, так что читайте!!!",
-                              imageName: "feed2"),
-            FeedCardViewModel(info: "Статья",
-                              title: "Лучшее за неделю: будущие Apple Watch и iPhone 11",
-                              shortDescription: "Short text",
-                              imageName: "feed3"),
-            FeedCardViewModel(info: "Новости",
-                              title: "Google запустит аналог AirDrop",
-                              shortDescription: "Функция Fast Share должна стать аналогом AirDrop, но для устройств Google. Для передачи данных используется Wi-Fi и Bluetooth. Можно будет ",
-                              imageName: "feed1"),
-            FeedCardViewModel(info: "Прикольная новость",
-                              title: "Кликбейт заголовок про то какой же крутой это смартфон от китайцев",
-                              shortDescription: "Каждый раз одно и то же, так что читайте!!!",
-                              imageName: "feed2"),
-            FeedCardViewModel(info: "Статья",
-                              title: "Лучшее за неделю: будущие Apple Watch и iPhone 11",
-                              shortDescription: "Short text",
-                              imageName: "feed3")]
+    func makeViewModels(_ articles: [Article]) -> [FeedCardViewModel] {
+        return articles.map { article in
+            FeedCardViewModel(info: "info",
+                              title: article.title ?? "",
+                              shortDescription: article.description ?? "",
+                              imageName: article.urlToImage ?? "")
+        }
     }
 }
