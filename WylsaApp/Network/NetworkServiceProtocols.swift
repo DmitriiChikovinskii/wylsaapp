@@ -5,8 +5,14 @@
 
 import Foundation
 
+struct ArticlesRequestParams {
+    let pageSize: Int
+    let page: Int
+    let search: String
+}
+
 protocol ArticlesNetworkProtocol {
-    func requestArticles(completion: @escaping (Result<ArticlesResponse, Error>) -> Void)
+    func requestArticles(params: ArticlesRequestParams, completion: @escaping (Result<ArticlesResponse, Error>) -> Void)
 }
 
 struct ArticlesResponse: Decodable {

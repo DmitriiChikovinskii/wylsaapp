@@ -17,7 +17,7 @@ class AppDependency {
     }
 
     static func makeDefault() -> AppDependency {
-        let networkService = NetworkService(urlFactory: URLFactory())
+        let networkService = NetworkService()
         return AppDependency(networkService: networkService)
     }
 }

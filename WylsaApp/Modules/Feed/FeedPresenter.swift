@@ -15,6 +15,9 @@ final class FeedPresenter {
     private let router: FeedRouterInput
     private let interactor: FeedInteractorInput
 
+    private var isNextPageLoading = false
+    private var isReloading = false
+    private var hasNextPage = true
     private var articles: [Article] = []
 
     init(router: FeedRouterInput, interactor: FeedInteractorInput) {
@@ -28,7 +31,18 @@ extension FeedPresenter: FeedModuleInput {
 
 extension FeedPresenter: FeedViewOutput {
     func viewDidLoad() {
-        self.interactor.loadArticles()
+        self.isReloading = true
+        self.interactor.reload()
+    }
+
+    func willDisplay(at index: Int) {
+        guard !self.isReloading,
+              !self.isNextPageLoading,
+              (self.articles.count - index) < 10 else {
+            return
+        }
+        self.isNextPageLoading = true
+        self.interactor.loadNext()
     }
 }
 
@@ -37,8 +51,16 @@ extension FeedPresenter: FeedInteractorOutput {
         // TODO: implement error handling
     }
 
-    func didLoad(_ articles: [Article]) {
-        self.articles = articles
+    func didLoad(_ articles: [Article], loadType: LoadingDataType) {
+        switch loadType {
+        case .reload:
+            self.isReloading = false
+            self.articles = articles
+        case .nextPage:
+            self.isNextPageLoading = false
+            self.hasNextPage = articles.count > 0
+            self.articles.append(contentsOf: articles)
+        }
         let viewModels: [FeedCardViewModel] = self.makeViewModels(self.articles)
         self.view?.set(viewModels: viewModels)
     }

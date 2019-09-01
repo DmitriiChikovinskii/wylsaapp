@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum LoadingDataType {
+    case nextPage
+    case reload
+}
+
 protocol FeedModuleInput {
 	var moduleOutput: FeedModuleOutput? { get }
 }
@@ -21,15 +26,17 @@ protocol FeedViewInput: class {
 
 protocol FeedViewOutput: class {
     func viewDidLoad()
+    func willDisplay(at index: Int)
 }
 
 protocol FeedInteractorInput: class {
-    func loadArticles()
+    func reload()
+    func loadNext()
 }
 
 protocol FeedInteractorOutput: class {
     func didEncounterError(_ error: Error)
-    func didLoad(_ articles: [Article])
+    func didLoad(_ articles: [Article], loadType: LoadingDataType)
 }
 
 protocol FeedRouterInput: class {
