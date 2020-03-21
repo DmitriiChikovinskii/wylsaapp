@@ -27,6 +27,7 @@ protocol FeedViewInput: class {
 protocol FeedViewOutput: class {
     func viewDidLoad()
     func willDisplay(at index: Int)
+    func onLoginTap()
 }
 
 protocol FeedInteractorInput: class {
@@ -40,4 +41,5 @@ protocol FeedInteractorOutput: class {
 }
 
 protocol FeedRouterInput: class {
+    func showLogin()
 }

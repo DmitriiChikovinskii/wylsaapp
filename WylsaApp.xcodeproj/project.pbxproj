@@ -10,25 +10,36 @@
 		1803208AE2E6D9B01CC49117 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032766BAEAD8C3752D7DEF /* UIColor.swift */; };
 		180321731992FDC511CC6031 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B60079C49236767C706 /* FeedPresenter.swift */; };
 		180321AC80723F4B53120C92 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCED445B44EEA9EE6B /* FeedViewCell.swift */; };
+		180321E87CC72B56F1CA01E9 /* SocialButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E8E9C054D88D82B4743 /* SocialButtonFactory.swift */; };
+		18032238821454982CE6656A /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032EC59CACDA617E503C9B /* Blocks.swift */; };
 		1803223A31101A4D98BFE897 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180327FCB1074A898BCB156B /* Styles.swift */; };
 		1803224055EAAF6CB240024F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180322C664BAB5E87BC6042E /* Assets.xcassets */; };
+		18032326AC51BFBD3E90AC8B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803278A78B2DB55760235C4 /* LoginInteractor.swift */; };
 		1803235D42F63CEA7F9E3B9B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180325F266C2F0B0E0EBB734 /* FeedViewController.swift */; };
 		18032383956EC8164137EC93 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032C63D69D3F3715B02901 /* AppCoordinator.swift */; };
 		1803239745A0C42B39347432 /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032833F17FCD3A1E134432 /* FeedContainer.swift */; };
+		18032431E3C0DC7BDA9FFA64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180321347719BA9E9CA591B0 /* LoginViewController.swift */; };
 		180324D2913CE5FB4667C587 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */; };
 		1803251A9E38E39EDCBEF75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803235725436DDDC951B326 /* LaunchScreen.storyboard */; };
 		180325946A95C10091A5DD18 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032F2714F04D9EF608500D /* FeedCardView.swift */; };
+		180325BBC7B26389CF294F58 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032F359483DF8812731B90 /* LoginProtocols.swift */; };
+		1803266551CF8B708F04DD27 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B91866350F2BC1D556B /* LoginService.swift */; };
 		1803274B7B46ECD73F30331F /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E9846D605AA5FFB366D /* URLFactory.swift */; };
 		180327FAA989AD599855D55F /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */; };
 		1803284D50C0937C50C81A5E /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032410572685EB6BBBA115 /* FeedInteractor.swift */; };
 		180329095E7D1CD1AD3F9212 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180322CA700879A56AE8CB06 /* Font.swift */; };
 		1803296BA00155CFEF20E931 /* NetworkService+Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180328976FAD44CC2DBE2CF8 /* NetworkService+Articles.swift */; };
+		180329B90D18FDBDCCB05B7D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180324E305C439B87FB86AA1 /* BaseRouter.swift */; };
+		18032A0A4EC76C4ADEA14FE0 /* BlockBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032165DB015E8622598415 /* BlockBarButtonItem.swift */; };
+		18032A901487AE2808071B96 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180326EDF03E0908A879AAFC /* LoginPresenter.swift */; };
 		18032AA76C9A6D0044D6C040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803274A210E5A4670FEAA4F /* AppDelegate.swift */; };
 		18032B99B32D99B29B65CE87 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803273D525E2DBCF711C54C /* AppDependency.swift */; };
 		18032BE14AE07914F3088E97 /* NetworkServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032347BCAAFF2C70D61784 /* NetworkServiceProtocols.swift */; };
 		18032CD6883CC24435A221EA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032B6B724A0D2D8DD84BE4 /* NetworkService.swift */; };
 		18032CFD13F704F40DB26974 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032FFDB394D83F016B0CEF /* FeedRouter.swift */; };
 		18032DC1596826ECB9641052 /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032624517CAA9534CF4A14 /* FeedProtocols.swift */; };
+		18032E0AA8482D9D25FD608F /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180328CE2295A236345FD62D /* LoginRouter.swift */; };
+		18032ECDA37EE5638D277EB1 /* LoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032AC07BEDB0271D68112D /* LoginContainer.swift */; };
 		18032F07272F17CDFA80CC59 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032C845DC1FC47A5B03BC0 /* UIImageView+URL.swift */; };
 		18032FF140BEE3F95D0A9074 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18032597246FD88920AE1826 /* Localization.swift */; };
 		1BAEF68FD33604C84D16416C /* Pods_WylsaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E1625FB5099D96B3DC485 /* Pods_WylsaApp.framework */; };
@@ -38,31 +49,43 @@
 		09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WylsaApp.debug.xcconfig"; path = "Target Support Files/Pods-WylsaApp/Pods-WylsaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		0A9E1625FB5099D96B3DC485 /* Pods_WylsaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WylsaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180320584D339D17B3B32C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		180321347719BA9E9CA591B0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18032165DB015E8622598415 /* BlockBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockBarButtonItem.swift; sourceTree = "<group>"; };
 		180322C664BAB5E87BC6042E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180322CA700879A56AE8CB06 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		18032347BCAAFF2C70D61784 /* NetworkServiceProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocols.swift; sourceTree = "<group>"; };
 		18032410572685EB6BBBA115 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		18032417E30BEDE80BD839D4 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		180324E305C439B87FB86AA1 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		18032597246FD88920AE1826 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		180325F266C2F0B0E0EBB734 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		18032624517CAA9534CF4A14 /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
+		180326EDF03E0908A879AAFC /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		1803273D525E2DBCF711C54C /* AppDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		1803274A210E5A4670FEAA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18032766BAEAD8C3752D7DEF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1803278A78B2DB55760235C4 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		180327FCB1074A898BCB156B /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		180327FCED445B44EEA9EE6B /* FeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		18032805141893949F92DFDA /* WylsaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18032833F17FCD3A1E134432 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
 		180328891CF13E4FAFBB2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180328976FAD44CC2DBE2CF8 /* NetworkService+Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkService+Articles.swift"; sourceTree = "<group>"; };
+		180328CE2295A236345FD62D /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		18032AC07BEDB0271D68112D /* LoginContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContainer.swift; sourceTree = "<group>"; };
 		18032B60079C49236767C706 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		18032B6B724A0D2D8DD84BE4 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		18032B91866350F2BC1D556B /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		18032C63D69D3F3715B02901 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		18032C845DC1FC47A5B03BC0 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		18032E2BCEDD3FA56EA377C1 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		18032E8E9C054D88D82B4743 /* SocialButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonFactory.swift; sourceTree = "<group>"; };
 		18032E9846D605AA5FFB366D /* URLFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		18032EC59CACDA617E503C9B /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		18032F2714F04D9EF608500D /* FeedCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
+		18032F359483DF8812731B90 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		18032FFDB394D83F016B0CEF /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		2A2B419B2416D08800BCF5D5 /* WylsaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WylsaApp.entitlements; sourceTree = "<group>"; };
 		ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WylsaApp.release.xcconfig"; path = "Target Support Files/Pods-WylsaApp/Pods-WylsaApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1803201804B27D62E76197CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				18032165DB015E8622598415 /* BlockBarButtonItem.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		1803201BD3E5393B64A87F19 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +130,7 @@
 		1803253E9E1AACD1B0AFCFA0 /* WylsaApp */ = {
 			isa = PBXGroup;
 			children = (
+				2A2B419B2416D08800BCF5D5 /* WylsaApp.entitlements */,
 				180320584D339D17B3B32C83 /* Info.plist */,
 				180322C664BAB5E87BC6042E /* Assets.xcassets */,
 				1803235725436DDDC951B326 /* LaunchScreen.storyboard */,
@@ -107,8 +139,18 @@
 				18032AC64EEFE043A0901533 /* Helpers */,
 				18032FB2AC83D8E11B0E9C6B /* Extensions */,
 				180327B9EBC666654A542298 /* Network */,
+				1803263B3EFB9980F1067628 /* Common */,
+				180325EA6DE27BB0F7908198 /* Services */,
 			);
 			path = WylsaApp;
+			sourceTree = "<group>";
+		};
+		180325EA6DE27BB0F7908198 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18032B91866350F2BC1D556B /* LoginService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		180326215719203F7E9E695A /* Products */ = {
@@ -117,6 +159,16 @@
 				18032805141893949F92DFDA /* WylsaApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1803263B3EFB9980F1067628 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1803201804B27D62E76197CA /* UI */,
+				18032EC59CACDA617E503C9B /* Blocks.swift */,
+				180324E305C439B87FB86AA1 /* BaseRouter.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		180327B9EBC666654A542298 /* Network */ = {
@@ -136,8 +188,17 @@
 				18032C53333A50526F2D7192 /* Feed */,
 				18032C63D69D3F3715B02901 /* AppCoordinator.swift */,
 				1803273D525E2DBCF711C54C /* AppDependency.swift */,
+				18032CF1CB94DFF2F052E419 /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		18032A69ACA2057EB8144774 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18032E8E9C054D88D82B4743 /* SocialButtonFactory.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		18032AC64EEFE043A0901533 /* Helpers */ = {
@@ -166,6 +227,20 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		18032CF1CB94DFF2F052E419 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18032F359483DF8812731B90 /* LoginProtocols.swift */,
+				1803278A78B2DB55760235C4 /* LoginInteractor.swift */,
+				180328CE2295A236345FD62D /* LoginRouter.swift */,
+				180326EDF03E0908A879AAFC /* LoginPresenter.swift */,
+				18032AC07BEDB0271D68112D /* LoginContainer.swift */,
+				180321347719BA9E9CA591B0 /* LoginViewController.swift */,
+				18032A69ACA2057EB8144774 /* Helpers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		18032DFFDE9C8A27814724A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +265,6 @@
 				09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */,
 				ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -339,6 +413,17 @@
 				1803274B7B46ECD73F30331F /* URLFactory.swift in Sources */,
 				18032B99B32D99B29B65CE87 /* AppDependency.swift in Sources */,
 				18032F07272F17CDFA80CC59 /* UIImageView+URL.swift in Sources */,
+				18032A0A4EC76C4ADEA14FE0 /* BlockBarButtonItem.swift in Sources */,
+				18032238821454982CE6656A /* Blocks.swift in Sources */,
+				180325BBC7B26389CF294F58 /* LoginProtocols.swift in Sources */,
+				18032326AC51BFBD3E90AC8B /* LoginInteractor.swift in Sources */,
+				18032E0AA8482D9D25FD608F /* LoginRouter.swift in Sources */,
+				18032A901487AE2808071B96 /* LoginPresenter.swift in Sources */,
+				18032ECDA37EE5638D277EB1 /* LoginContainer.swift in Sources */,
+				18032431E3C0DC7BDA9FFA64 /* LoginViewController.swift in Sources */,
+				180329B90D18FDBDCCB05B7D /* BaseRouter.swift in Sources */,
+				180321E87CC72B56F1CA01E9 /* SocialButtonFactory.swift in Sources */,
+				1803266551CF8B708F04DD27 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +508,7 @@
 			baseConfigurationReference = 09EB652F1D8095AD4BF6F801 /* Pods-WylsaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WylsaApp/WylsaApp.entitlements;
 				DEVELOPMENT_TEAM = 6K27QW9MU8;
 				INFOPLIST_FILE = WylsaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,6 +524,7 @@
 			baseConfigurationReference = ADFE1BD7E3017AA8D1A04BCD /* Pods-WylsaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WylsaApp/WylsaApp.entitlements;
 				DEVELOPMENT_TEAM = 6K27QW9MU8;
 				INFOPLIST_FILE = WylsaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

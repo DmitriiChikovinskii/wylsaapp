@@ -8,7 +8,7 @@ import Foundation
 class NetworkService {
 
     func baseRequest<T: Decodable>(url: String, completion: @escaping (Result<T, Error>) -> Void) {
-        guard let url = URL(string: url) else{
+        guard let url = URL(string: url) else {
             completion(.failure(NetworkError.wrongUrl))
             return
         }

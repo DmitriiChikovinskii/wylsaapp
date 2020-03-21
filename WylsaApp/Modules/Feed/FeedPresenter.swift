@@ -44,6 +44,10 @@ extension FeedPresenter: FeedViewOutput {
         self.isNextPageLoading = true
         self.interactor.loadNext()
     }
+
+    func onLoginTap() {
+        self.router.showLogin()
+    }
 }
 
 extension FeedPresenter: FeedInteractorOutput {

@@ -55,9 +55,23 @@ private extension AppCoordinator {
     func setupAppearance() {
         UINavigationBar.appearance().barTintColor = .white
         UINavigationBar.appearance().tintColor = .black
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        UINavigationBar.appearance().isTranslucent = false
+
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = .white
+
+            UINavigationBar.appearance().tintColor = .black
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            UINavigationBar.appearance().tintColor = .black
+            UINavigationBar.appearance().barTintColor = .purple
+            UINavigationBar.appearance().isTranslucent = false
+        }
         UINavigationBar.appearance().shadowImage = UIImage()
+
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
 
         UITabBar.appearance().barTintColor = .white
         UITabBar.appearance().tintColor = Styles.Color.appGreen
